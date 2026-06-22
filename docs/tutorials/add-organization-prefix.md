@@ -39,6 +39,18 @@ This tutorial walks you through grouping your Lore repositories under an organiz
    lore repository config remote_url
    ```
 
+## Deep nesting (Optional)
+
+Lore supports deep directory-style nesting for larger organizations. You can group repositories by department, team, or project phase.
+
+```bash
+# Example of deep nesting
+lore repository create ucs://localhost:41337/MyOrg/Games/Mobile/InternalTest
+```
+
+> [!NOTE]
+> The total length of the path (including all prefixes and the repository name) must be under **1,000 characters**.
+
 ## Verify
 
 Run `lore repository info` to see the full repository name including the prefix.
